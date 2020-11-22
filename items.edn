@@ -1,9 +1,19 @@
-{:items [{:name "Ryzen 9 - 5950x"
+{:items [{:name "Ryzen 9 - 5600x"
+          :store "Coolblue"
+          :availability-fn petar.dev.reblue.coolblue/available?
+          :url "https://www.coolblue.nl/product/871396/amd-ryzen-5-5600x.html"}
+         {:name "Ryzen 9 - 5900x"
+          :store "Coolblue"
+          :availability-fn petar.dev.reblue.coolblue/available?
+          :url "https://www.coolblue.nl/product/871394/amd-ryzen-9-5900x.html"}
+         {:name "Ryzen 9 - 5950x"
           :store "Coolblue"
           :availability-fn petar.dev.reblue.coolblue/available?
           :url "https://www.coolblue.nl/product/871392/amd-ryzen-9-5950x.html"}
-         {:name "Ryzen 9 - 5600x"
+         {:name "Asus GeForce RTX 3080 ROG Strix Gaming OC 10G"
           :store "Coolblue"
           :availability-fn petar.dev.reblue.coolblue/available?
-          :url "https://www.coolblue.nl/product/871396/amd-ryzen-5-5600x.html"}]}
+          :url "https://www.coolblue.nl/product/868731/asus-geforce-rtx-3080-rog-strix-gaming-oc-10g.html"}]}
+
+
 
