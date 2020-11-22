@@ -1,4 +1,4 @@
-(ns petar.dev.coolblue
+(ns petar.dev.reblue.coolblue
   (:require [net.cgrand.enlive-html :as html]))
 
 (defn available?
