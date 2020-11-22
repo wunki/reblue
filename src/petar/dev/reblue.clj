@@ -14,4 +14,4 @@
   "Checks the list of sites and sends an email if one of them is available"
   [& _args]
   (let [config (read-config "items.edn")]
-    (doall (map print-availability (:items config)))))
+    (dorun (map print-availability (:items config)))))

@@ -1,20 +1,20 @@
-# reblue
+# Reblue
 
-FIXME: my new application.
+Reblue checks Coolblue for when items are available again. As soon as it notices that something becomes available, it will send you an email.
+
+Configuration happens in [./items.edn].
 
 ## Installation
 
-Download from https://github.com/petar.dev/reblue
+Download from https://github.com/wunki/reblue
 
 ## Usage
-
-FIXME: explanation
 
 Run the project directly:
 
     $ clojure -M -m petar.dev.reblue
 
-Run the project's tests (they'll fail until you edit them):
+Run the project's tests:
 
     $ clojure -M:test:runner
 
@@ -26,25 +26,9 @@ Run that uberjar:
 
     $ java -jar reblue.jar
 
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
 ## License
 
-Copyright © 2020 Petar
+Copyright © 2020 Petar Radosevic
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
