@@ -2,7 +2,7 @@
 
 Reblue checks Coolblue for when items are available again. As soon as it notices that something becomes available, it will send you an email.
 
-Configuration happens in [./items.edn].
+Configuration happens in [items.edn](./items.edn).
 
 ## Installation
 
