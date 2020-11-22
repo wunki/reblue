@@ -1,9 +1,9 @@
 {:items [{:name "Ryzen 9 - 5950x"
           :store "Coolblue"
-          :availability-checker petar.dev.reblue.coolblue/available?
+          :availability-fn petar.dev.reblue.coolblue/available?
           :url "https://www.coolblue.nl/product/871392/amd-ryzen-9-5950x.html"}
          {:name "Ryzen 9 - 5600x"
           :store "Coolblue"
-          :availability-checker petar.dev.reblue.coolblue/available?
+          :availability-fn petar.dev.reblue.coolblue/available?
           :url "https://www.coolblue.nl/product/871396/amd-ryzen-5-5600x.html"}]}
-          
+
