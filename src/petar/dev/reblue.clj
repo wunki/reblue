@@ -1,7 +1,7 @@
 (ns petar.dev.reblue
   (:gen-class)
-  (:require [clj-http.client :as client]
-            [net.cgrand.enlive-html :as html]))
+  (:require [aero.core :refer [read-config]]
+            [clj-http.client :as client]))
 
 (defn get-html
   "Returns the body of a HTML request"
@@ -13,23 +13,15 @@
                                :cookie-policy :none})]
      (:body resp))))
 
-(defn is-available?
-  "Tells us if a specific item is deliverable"
-  [html]
-  (let [doc   (html/html-snippet html)
-        nodes (html/select doc [:.text-color--unavailable])]
-    (empty? nodes)))
+(defn print-availability
+  [item]
+  (let [html (get-html (:url item))]
+    (if ((:availability-checker item) html)
+      (println (:name item) "is AVAILABLE at" (:store item))
+      (println (:name item) "is NOT available at" (:store item)))))
 
 (defn -main
   "Checks the list of sites and sends an email if one of them is available"
-  [& args]
-  (let [doc (get-html "https://www.coolblue.nl/product/871392/amd-ryzen-9-5950x.html")]
-    (if (is-available? doc)
-      (println "The thing you wanted is available...")
-      (println "The thing you wanted is NOT available..."))))
-
-(comment
-  (def html-5950 (get-html "https://www.coolblue.nl/product/871392/amd-ryzen-9-5950x.html"))
-  (def html-intel (get-html "https://www.coolblue.nl/product/823397/intel-core-i9-9900k.html"))
-  (is-available? html-intel)
-  (is-available? html-5950))
+  [& _args]
+  (let [config (read-config "items.edn")]
+    (doall (map print-availability (:items config)))))
