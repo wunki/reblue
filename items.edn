@@ -15,4 +15,9 @@
          {:name "Asus GeForce RTX 3080 ROG Strix Gaming OC 10G"
           :store "Coolblue"
           :availability-fn available?
-          :url "https://www.coolblue.nl/product/868731/asus-geforce-rtx-3080-rog-strix-gaming-oc-10g.html"}]}
+          :url "https://www.coolblue.nl/product/868731/asus-geforce-rtx-3080-rog-strix-gaming-oc-10g.html"}
+         {:name "Asus GeForce RTX 3080 ROG Strix Gaming 10G"
+          :store "Coolblue"
+          :availability-fn available?
+          :url "https://www.coolblue.nl/product/868732/asus-geforce-rtx-3080-rog-strix-gaming-10g.html"}]}
+

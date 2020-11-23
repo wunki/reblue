@@ -17,8 +17,8 @@
   "Pretty prints the availability in the terminal."
   [item]
   (if (:is-available? item)
-    (println (:name item) "is AVAILABLE at" (:store item))
-    (println (:name item) "is NOT available at" (:store item))))
+    (println (str (:name item) " at " (:store item) ": available."))
+    (println (str (:name item) " at " (:store item) ": not available."))))
 
 (defn -main
   "Checks the list of sites and sends an email if one of them is available"
