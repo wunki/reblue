@@ -1,6 +1,6 @@
 {:secrets #include #join [#env HOME "/.secrets.edn"]
  :postmark-api-key #ref [:secrets :postmark-api-key]
- :items [{:name "Ryzen 9 - 5600x"
+ :items [{:name "Ryzen 5 - 5600x"
           :store "Coolblue"
           :availability-fn available?
           :url "https://www.coolblue.nl/product/871396/amd-ryzen-5-5600x.html"}
@@ -16,5 +16,3 @@
           :store "Coolblue"
           :availability-fn available?
           :url "https://www.coolblue.nl/product/868731/asus-geforce-rtx-3080-rog-strix-gaming-oc-10g.html"}]}
-
-
